@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms &amp; Privacy — Contract Watchdog</title>
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap');
+
+:root{
+  --bg:#F3F4F8;
+  --panel:#FFFFFF;
+  --ink:#15171F;
+  --ink-soft:#6B7080;
+  --steel:#5457E5;
+  --steel-dark:#3F41C7;
+  --steel-tint:#EDEDFD;
+  --line:#E5E7EF;
+  --shadow:rgba(21,23,31,0.08);
+}
+
+*{box-sizing:border-box; margin:0; padding:0;}
+
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:'Inter',sans-serif;
+  min-height:100vh;
+  padding:32px 20px 80px;
+}
+
+.wrap{max-width:720px; margin:0 auto;}
+
+.brand{display:flex; align-items:center; gap:12px; margin-bottom:24px;}
+.mark{width:36px; height:36px; border-radius:9px; object-fit:cover; box-shadow:0 3px 10px var(--shadow);}
+.brand h1{font-family:'Bricolage Grotesque', sans-serif; font-weight:700; font-size:22px; letter-spacing:-0.01em;}
+
+.back-link{
+  display:inline-block; margin-bottom:24px; color:var(--steel-dark);
+  font-size:13px; font-weight:600; text-decoration:none;
+}
+.back-link:hover{text-decoration:underline;}
+
+.card{
+  background:var(--panel); border:1px solid var(--line); border-radius:16px;
+  padding:40px; box-shadow:0 4px 20px var(--shadow);
+}
+
+h2{
+  font-family:'Bricolage Grotesque', sans-serif; font-weight:700; font-size:28px;
+  margin-bottom:6px; letter-spacing:-0.01em;
+}
+.updated{color:var(--ink-soft); font-size:13px; margin-bottom:32px;}
+
+h3{
+  font-family:'Bricolage Grotesque', sans-serif; font-weight:600; font-size:17px;
+  margin-top:28px; margin-bottom:10px;
+}
+p{line-height:1.65; color:var(--ink); margin-bottom:12px; font-size:14.5px;}
+p.soft{color:var(--ink-soft);}
+ul{margin:10px 0 12px 22px; line-height:1.65; font-size:14.5px;}
+li{margin-bottom:6px;}
+
+a{color:var(--steel-dark); text-decoration:none;}
+a:hover{text-decoration:underline;}
+
+.contact-box{
+  background:var(--steel-tint); border-radius:12px; padding:18px 20px;
+  margin-top:28px; font-size:14.5px;
+}
+.contact-box strong{display:block; margin-bottom:4px;}
+
+hr{border:none; border-top:1px solid var(--line); margin:28px 0;}
+
+footer{
+  text-align:center; color:var(--ink-soft); font-size:12.5px; margin-top:28px;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="brand">
+    <img class="mark" src="/favicon.png" alt="Contract Watchdog">
+    <h1>Contract Watchdog</h1>
+  </div>
+
+  <a class="back-link" href="/">&larr; Back to the app</a>
+
+  <div class="card">
+    <h2>Terms of Service &amp; Privacy Policy</h2>
+    <p class="updated">Last updated: July 24, 2026</p>
+
+    <h3>What Contract Watchdog does</h3>
+    <p>Contract Watchdog analyzes contracts you submit — as pasted text or photos — and returns automated observations about clauses that may be risky, unusual, or missing standard protections.</p>
+    <p class="soft"><strong>This is not legal advice.</strong> Contract Watchdog is an automated tool, not a lawyer, and its output should not be relied on as a substitute for review by a qualified attorney. For anything with real money, liability, or risk on the line, have a professional review the contract.</p>
+
+    <h3>Your account</h3>
+    <p>You need an account (email + password) to use the service. You're responsible for keeping your login credentials secure and for any activity under your account. The free plan includes a limited number of analyses per month; paid plans remove that limit.</p>
+
+    <h3>What data we collect</h3>
+    <ul>
+      <li><strong>Account data:</strong> your email address and a securely hashed version of your password (we never store your password in plain text).</li>
+      <li><strong>Contract content:</strong> text or photos you submit for analysis. This is sent to Google's Gemini API to generate the analysis, and is not stored by us beyond what's needed to return your results.</li>
+      <li><strong>Usage data:</strong> how many analyses you've run each month, used to enforce free-plan limits.</li>
+      <li><strong>Billing data:</strong> if you upgrade to Pro, payment is handled entirely by Gumroad. We do not receive or store your card details — only your plan status and a billing reference from Gumroad.</li>
+    </ul>
+
+    <h3>Third-party services we use</h3>
+    <ul>
+      <li><strong>Google Gemini API</strong> — processes the contract text/photos you submit to generate the analysis.</li>
+      <li><strong>Gumroad</strong> — handles payment processing for Pro subscriptions.</li>
+      <li><strong>Supabase</strong> — hosts our database (accounts and usage records).</li>
+    </ul>
+    <p class="soft">Each of these providers has its own privacy practices governing data they process on our behalf.</p>
+
+    <h3>Data retention &amp; deletion</h3>
+    <p>We keep your account data for as long as your account is active. If you'd like your account and associated data deleted, email us at the address below and we'll process the request.</p>
+
+    <h3>Disclaimer of warranty</h3>
+    <p class="soft">Contract Watchdog is provided "as is," without warranties of any kind. We do not guarantee that the analysis is complete, accurate, or free of errors. Automated review can miss issues a human reviewer would catch, and can flag things that aren't actually problems. Use your own judgment, and consult a lawyer for anything important.</p>
+
+    <h3>Limitation of liability</h3>
+    <p class="soft">To the fullest extent permitted by law, Contract Watchdog and its operators are not liable for any damages arising from your use of, or inability to use, the service — including decisions made based on its output.</p>
+
+    <h3>Changes to these terms</h3>
+    <p>We may update this page from time to time. Continued use of the service after changes means you accept the updated terms.</p>
+
+    <hr>
+
+    <div class="contact-box">
+      <strong>Questions or requests?</strong>
+      Email us at <a href="mailto:unconventional.inc.help@gmail.com">unconventional.inc.help@gmail.com</a>
+    </div>
+  </div>
+
+  <footer>Contract Watchdog</footer>
+</div>
+</body>
+</html>
